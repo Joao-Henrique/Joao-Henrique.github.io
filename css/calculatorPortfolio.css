@@ -1,0 +1,39 @@
+#calcOutput{
+  background-color:#2C3E50;
+  color: white;
+  font-size:27px;
+  width:250px;
+  height:75px;
+  margin: auto;
+  border-top-right-radius:1em;
+  border-top-left-radius:1em;
+}
+#calculator{
+  background-color:#18BC9C;
+  padding:4px;
+  width:250px;
+  height:270px;
+  margin:auto;
+  border-bottom-right-radius:2em;
+  border-bottom-left-radius:2em;
+}
+#steps{
+  padding-left:10px;
+  padding-right:10px;
+  font-size:2em;
+}
+.button{
+  font-size:25px;
+  padding:1px;
+  margin:4px;
+  width:2.9vw;
+  height:2.9vw; 
+}
+.bigButton{
+  width:99px;
+  height:40px;
+  padding:1px;
+  margin:4px;
+  font-size:25px;
+}
+
