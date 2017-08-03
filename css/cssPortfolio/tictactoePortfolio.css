@@ -1,0 +1,25 @@
+#tttGameBox {
+  background-color:#18BC9C;
+  width:300px;
+  padding:20px;
+  margin:auto;
+  border-radius:10px;
+}
+#tttcol-ms-6 {
+  margin: 3px;
+}
+.tac{
+  padding:10px;
+  border-radius:10px;
+  background-color:#18BC9C;
+  font-size:23px;
+  color:white;
+  margin:14px;
+}
+.tic {
+  margin:10px;
+  height:80px;
+  width:80px;
+  padding:30px;
+  margin:.1px;
+}
