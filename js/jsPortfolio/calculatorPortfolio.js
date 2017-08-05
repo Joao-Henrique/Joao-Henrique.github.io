@@ -34,24 +34,24 @@ $(document).ready(function(){
   
   function update(){
     totalString = inputs.join("");
-    $("#steps").html(totalString);
+    $("#calcSteps").html(totalString);
   }
   
   function getTotal(){
     totalString = inputs.join("");
-    $("#steps").html(eval(totalString));
+    $("#calcSteps").html(eval(totalString));
   }
   
   $("a").on("click", function(){
-    if(this.id==="deleteAll"){
+    if(this.id==="calcDeleteAll"){
       inputs=[""];
       update();
     }
-    else if(this.id==="backOne"){
+    else if(this.id==="calcBackOne"){
       inputs.pop();
       update();
     }
-    else if(this.id==="total"){
+    else if(this.id==="calcTotal"){
       getTotal();
     }
     else{

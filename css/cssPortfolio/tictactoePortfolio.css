@@ -8,18 +8,21 @@
 #tttcol-ms-6 {
   margin: 3px;
 }
-.tac{
+.ttttic {
+  font-size:60px;
+  height:80px;
+  width:80px;
+  padding:;
+  margin:px;
+  border-color:white;
+  border-style:solid;
+  border-width:10px;
+}
+.ttttac{
   padding:10px;
   border-radius:10px;
   background-color:#18BC9C;
   font-size:23px;
   color:white;
   margin:14px;
-}
-.tic {
-  margin:10px;
-  height:80px;
-  width:80px;
-  padding:30px;
-  margin:.1px;
 }
