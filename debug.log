@@ -13,3 +13,6 @@
 [0805/224022.403:ERROR:process_info.cc(631)] range at 0x5e20288e00000000, size 0x267 fully unreadable
 [0805/224022.403:ERROR:process_info.cc(631)] range at 0x5e2028f400000000, size 0x267 fully unreadable
 [0805/224022.403:ERROR:process_info.cc(631)] range at 0x0, size 0x267 fully unreadable
+[0805/224623.377:ERROR:process_info.cc(631)] range at 0x9ba0288e00000000, size 0x1fe fully unreadable
+[0805/224623.377:ERROR:process_info.cc(631)] range at 0x9ba028f400000000, size 0x1fe fully unreadable
+[0805/224623.377:ERROR:process_info.cc(631)] range at 0x0, size 0x1fe fully unreadable
