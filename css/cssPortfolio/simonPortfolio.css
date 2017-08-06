@@ -1,0 +1,89 @@
+body{
+  background-color:black;
+}
+
+h1{
+  color:white;
+  font-size:50px;
+  padding-top:20px;
+  margin:auto;
+  width:340px;
+}
+
+h2{
+  color:white;
+  font-size:40px;
+  text-align: center;
+  border-style:solid;
+  border-color:black;
+  border-radius:20px;;
+  background-color:black;
+  width:324px;
+  height:50px;
+  margin:auto;
+}
+
+.game-controls {
+  width:273px;
+  margin:auto;
+}
+
+.btn{
+  background-color:black;
+  border-color:black;
+  font-size:20px;
+}
+
+.btn:hover{
+  background-color:black;
+  border-style:dotted;
+  border-color:white;
+  border-width:1.5px;
+  border-radius:20px;
+}
+
+#checkbox-container {
+  text-align:center;
+  padding:5px;
+  color:white;
+}
+ 
+.game-container {
+  background-color:black;
+  width:324px;
+  margin:auto;
+  padding:10px;
+  padding-bottom:5px;
+}
+
+.color-btn {
+  width:150px;
+  height:150px;
+  display:;
+  border-style:solid;
+  border-color:black;
+  border-radius:20px;
+  opacity:.8;
+}
+
+#green-btn {
+  background-color:#76ff03;
+}
+
+#red-btn {
+  background-color:#f44336;
+}
+
+#yellow-btn {
+  background-color:#ffeb3b;
+}
+
+#blue-btn {
+  background-color:#2196F3;
+}
+
+footer{
+  text-align:center;
+  color:white;
+  padding-top:30px;
+}

@@ -22,6 +22,7 @@
     <!-- Portfolio CSS -->
     <link href="css\cssPortfolio\calculatorPortfolio.css" rel="stylesheet">
     <link href="css\cssPortfolio\tictactoePortfolio.css" rel="stylesheet">
+    <link href="css\cssPortfolio\simonPortfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -99,6 +100,8 @@
                 </div>
             </div>
             <div class="row">
+
+<!-- CALCULATOR PORTFOLIO -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -109,6 +112,8 @@
                         <img src="img/portfolio/calculatorPortfolio.png" class="img-responsive" alt="calculatorPortfolio">
                     </a>
                 </div>
+
+<!-- TIC TAC TOE PORTFOLIO -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -119,6 +124,8 @@
                         <img src="img/portfolio/ticTacToePortfolio.png" class="img-responsive" alt="Slice of cake">
                     </a>
                 </div>
+
+<!-- SIMON GAME PORTFOLIO -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -129,6 +136,8 @@
                         <img src="img/portfolio/circus.png" class="img-responsive" alt="Circus tent">
                     </a>
                 </div>
+
+<!-- NEXT PORTFOLIO -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -139,6 +148,8 @@
                         <img src="img/portfolio/game.png" class="img-responsive" alt="Game controller">
                     </a>
                 </div>
+
+<!-- NEXT PORTFOLIO -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -149,6 +160,8 @@
                         <img src="img/portfolio/safe.png" class="img-responsive" alt="Safe">
                     </a>
                 </div>
+
+<!-- NEXT PORTFOLIO -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -300,7 +313,7 @@
         </a>
     </div>
 
-    <!-- Portfolio Modals -->
+<!--============= CALCULATOR PORTFOLIO ============= -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -316,13 +329,11 @@
                             <h2>JavaScript Calculator</h2>
                             <hr class="star-primary">
 
-<!--OUTPUT-->
 <div id="calcOutput">
   <span id="calcSteps">0</span>
   <hr/>
 </div>
 
-<!--BUTTONS-->
 <div class="text-center" id="calculator">
   <a class="btn btn-danger button calcBtn" id="calcDeleteAll">AC</a>
   <a class="btn btn-danger button calcBtn" id="calcBackOne">CE</a>
@@ -376,6 +387,8 @@
             </div>
         </div>
     </div>
+
+<!--============= TIC TAC TOE PORTFOLIO ============= -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -436,6 +449,8 @@
             </div>
         </div>
     </div>
+
+<!--============= SIMON GAME PORTFOLIO ============= -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -448,9 +463,30 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Simon Game</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+
+<!--BUTTONS & SETINGS-->
+<div class="game-controls">
+  <button type="button" class="btn btn-primary" id="btn-start" name ="btn-start">Start</button>
+  <button type="button" class="btn btn-primary" id="btn-replay" name ="btn-replay">Replay</button>
+  <button type="button" class="btn btn-primary" id="btn-speed" name ="btn-speed">Speed</button>
+  <div id="checkbox-container">
+    <input type="checkbox" name="strict-mode" id="strict-mode-checkbox"> Strict Mode</div>
+  </div>
+  
+<!--DISPLAY INTERFACE-->  
+  <h2><span id="txt-count"--</span></h2>
+</div>
+
+<!--GAME COLOR CUBES-->
+<div class="game-container">
+  <div class="color-btn" id="green-btn" data-value="1"></div>
+  <div class="color-btn" id="red-btn" data-value="2"></div>
+  <br>
+  <div class="color-btn" id="yellow-btn" data-value="3"></div>
+  <div class="color-btn" id="blue-btn" data-value="4"></div>  
+</div>
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -610,6 +646,7 @@
     <!-- PORTFOLIO JavaScript -->
     <script src="js\jsPortfolio\calculatorPortfolio.js"></script>
     <script src="js\jsPortfolio\tictactoePortfolio.js"></script>
+    <script src="js\jsPortfolio\simonPortfolio.js"></script>
 
 </body>
 
