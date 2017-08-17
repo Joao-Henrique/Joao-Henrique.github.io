@@ -1,58 +1,83 @@
-.SGgame-controls {
-  width:273px;
+#SGContainer{
+  background-color:#18BC9C;
   margin:auto;
+  border-style:solid;
+  border-radius:17px;
+  border-color:#18BC9C;
+  width:300px;
 }
-
 .SGbtn{
-  background-color:black;
-  border-color:black;
+  background-color:#2C3E50;
+  border-color:#2C3E50;
   font-size:20px;
+  border-width:1.5px;
+  border-style:solid;
+  margin:15px 5px 5px 5px;
+  transition: all 0.5s ease;
 }
-
 .SGbtn:hover{
-  background-color:black;
+  background-color:#2C3E50;
   border-style:dotted;
   border-color:white;
   border-width:1.5px;
   border-radius:20px;
+  color:#18BC9C;
+  transition: all 0.5s ease;
 }
-
 #checkbox-container {
-  text-align:center;
   padding:5px;
+  font-size:20px;
+  color:#2C3E50;
+}
+#txt-count{
+  font-size:40px;
   color:white;
+  padding:0px 10px 0px 10px;
+  border-radius:17px;
+  width:30px;
 }
- 
-.game-container {
-  background-color:black;
-  width:500px;
+#counter{
   margin:auto;
-  padding:10px;
-  padding-bottom:5px;
+  margin-bottom:10px;
+  padding:5px;
+  border-radius:17px;
+  width:250px;
+  text-align:center;
 }
-
-.SGcolor-btn {
-  width:150px;
-  height:150px;
-  display:;
+.game-container {
+  background-color:#2C3E50;
+  width:250px;
+  margin:20px auto 20px auto;
   border-style:solid;
-  border-color:black;
-  border-radius:20px;
-  opacity:.8;
+  border-radius:17px;
+  border-color:#2C3E50;
 }
-
+.SGcolor-btn {
+  width:100px;
+  height:100px;
+  border-style:solid;
+  border-color:#2C3E50;
+  border-radius:17px;
+  opacity:.5;
+  margin:0px;
+}
 #green-btn {
   background-color:#76ff03;
+  float:left;
+  margin:15px 5px 8px 30px;
 }
-
 #red-btn {
   background-color:#f44336;
+  float:right;
+  margin:15px 30px 8px 5px;
 }
-
 #yellow-btn {
   background-color:#ffeb3b;
+  float:left;
+  margin:8px 5px 15px 30px;
 }
-
 #blue-btn {
-  background-color:#2196F3;
+  background-color:#2095F3;
+  float:right;
+  margin:8px 30px 15px 5px;
 }

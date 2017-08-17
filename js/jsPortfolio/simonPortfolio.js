@@ -19,19 +19,19 @@ $(document).ready(function() {
   };
 
 // BUTTON INTERACTION
-  function squareLight(btn) {
-    $('#' + btn).fadeTo(250, 1, function() {
-      var btnValue = $('#' + btn).data('value');
+  function squareLight(SGbtn) {
+    $('#' + SGbtn).fadeTo(250, 1, function() {
+      var btnValue = $('#' + SGbtn).data('value');
       var thisSound = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound' + btnValue + '.mp3');
       thisSound.play();
-      $('#' + btn).fadeTo(250, .8);
+      $('#' + SGbtn).fadeTo(250, .8);
     });
-    $('h2').css('background-color', 'black')
+    $('#counter').css('background-color', '#2C3E50')
   }
 
 // ALERT IF IT'S CORRECT OR WRONG
   function flashIcon(correct) {
-    var color = (correct === true) ? $('#txt-count').html('<span>Correct!!</span></p>') && $('h2').css('background-color', 'yellowgreen') : $('#txt-count').html("<span>Wrong!!</span></p>") && $('h2').css('background-color', 'red');
+    var color = (correct === true) ? $('#txt-count').html('<span>Correct!!</span>') && $('#counter').css('background-color', 'yellowgreen') : $('#txt-count').html("<span>Wrong!!</span>") && $('#counter').css('background-color', 'red');
   }
 
 // GAME LOGIC
@@ -65,7 +65,7 @@ $(document).ready(function() {
   }
 
 // USER INPUT SEQUENCE
-  $(".color-btn").click(function() {
+  $(".SGcolor-btn").click(function() {
     if (awaitingUserInput == true) {
       inputSequence.push($(this).data('value'));
       $('#txt-user-input').text(inputSequence);
@@ -100,8 +100,8 @@ $(document).ready(function() {
   });
 
 // START A NEW SEQUENCE
-  $('#btn-start').click(function() {
-    $('#txt-count').html("<span>Get Ready!!</span></p>") && $('h2').css('background-color', 'green')
+  $('#SGbtn-start').click(function() {
+    $('#txt-count').html("<span>Get Ready!!</span>") && $('#counter').css('background-color', 'green')
     currentSequence = [];
     inputSequence = [];
     addToSequence();
@@ -109,21 +109,21 @@ $(document).ready(function() {
   });
 
 // REPLAY LAST SEQUENCE
-  $('#btn-replay').click(function() {
+  $('#SGbtn-replay').click(function() {
     showSequence();
   });
   
 // TOGLE THE SEQUENCE DISPLAY SPEED
-  $('#btn-speed').click(function() {
+  $('#SGbtn-speed').click(function() {
     if (speed==500) {
-        $('#txt-count').html('<span>Slow Speed!!</span></p>') && $('h2').css('background-color', 'orange')
+        $('#txt-count').html('<span>Slow!!</span>') && $('#counter').css('background-color', 'orange')
         speed = 750;
     } else if (speed==750) {
         speed=1000;
-        $('#txt-count').html('<span>Slow as a Snail!!</span></p>') && $('h2').css('background-color', 'red')
+        $('#txt-count').html('<span>Slower!!</span>') && $('#counter').css('background-color', 'red')
     } else if (speed==1000) {
         speed=500;
-        $('#txt-count').html('<span>Normal Speed!!</span></p>') && $('h2').css('background-color', 'green')
+        $('#txt-count').html('<span>Normal!!</span>') && $('#counter').css('background-color', 'green')
     }
   });
 });
